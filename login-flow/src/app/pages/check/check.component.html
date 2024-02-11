@@ -1,0 +1,51 @@
+<div class="fullscreen-bg">
+    <div class="overlay-form">
+      <p-card header="Payment Details" [style]="{ width: '360px' }">
+          <div class="p-fluid">
+            <form id="myCCForm"  #paymentForm="ngForm">
+              <!-- <div>
+                <label for="ccNo">
+                  <span>Card Number</span>
+                </label>
+                <input id="ccNo" pInputText size="20" [(ngModel)]="cardNumber" name="cardNumber" autocomplete="off" required />
+              </div>
+              <div>
+                <label for="expDate">
+                  <span>Expiration Date (MM/YYYY)</span>
+                </label>
+                <input id="expMonth" pInputText size="2" [(ngModel)]="expMonth" name="expMonth" required />
+                <span> / </span>
+                <input id="expYear" pInputText size="4" [(ngModel)]="expYear" name="expYear" required />
+              </div>
+              <div>
+                <label for="cvv">
+                  <span>CVC</span>
+                </label>
+                <input id="cvv" pInputText size="4" [(ngModel)]="cvc" name="cvc" autocomplete="off" required />
+              </div>
+              <div class="fields">
+                <button type="submit" pButton label="Submit Payment" (click)="paymentSheet()"[disabled]="paymentForm.invalid"></button>
+              </div> -->
+              <div class="fields">
+                <button type="submit" pButton label="test Payment" (click)="paymentSheet()"></button>
+              </div>
+            </form>
+          </div>
+    </p-card>
+    </div>
+  </div>
+  
+  <div>
+      <label>
+        <span>Item Name:</span>
+      </label>
+      <span>{{ itemName }}</span>
+    </div>
+  
+    <div>
+      <label>
+        <span>Item Price:</span>
+      </label>
+      <span>{{ itemPrice | currency:'$' }}</span>
+    </div> 
+  

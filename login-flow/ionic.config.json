@@ -1,0 +1,12 @@
+{
+  "defaultProject": "login-flow",
+  "projects": {
+    "login-flow": {
+      "name": "login-flow",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular"
+    }
+  }
+}
